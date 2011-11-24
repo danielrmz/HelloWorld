@@ -20,6 +20,9 @@ There exists some areas of improvement, among these are:
  - Better UI
  - Move twitter keys to env vars
 
+Since one of the goals was to fit into dotcloud's free package, the cache project is disabled by default
+having left two of world.db and world.hello services. 
+
 Installation
 ============
 
@@ -33,6 +36,12 @@ Easy to install, its dotcloud ready.
  6. rake db:create && rake db:migrate
  7. edit twitter initializer with own keys. 
  
+For local deployment use:
+
+ cd world.hello
+ unicorn_rails -c ./config/unicorn.rb 
+
+
 Authors
 =======
 Daniel Ramirez <hello@danielrmz.com>
