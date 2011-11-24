@@ -1,0 +1,18 @@
+
+<div id="tweets"></div>
+
+<div class="navigation">
+	<a href="#" data-base="/provider/page"></a>
+</div>
+
+<% content_for :include_scripts do %>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<%= include_javascripts :timeline %>
+	<script type="text/javascript">
+		$.get("/provider/me", function(data) { 
+			window.Hello = data["data"]; 
+			World.Utils.Notifier.RequestPermission();
+			(new World.Timeline.Stream($("#tweets"), "/provider")).start(60);
+		});
+	</script>
+<% end %>

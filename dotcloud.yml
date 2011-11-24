@@ -1,0 +1,10 @@
+hello:
+  approot: world.hello
+  type: ruby
+# Disabled for the moment since we are making this a two service app (dotcloud free package).
+# However it could be enabled to have better processing. The config at the AppController needs to be updated though
+#cache:
+#  approot: world.cache
+#  type: ruby
+db:
+  type: mysql

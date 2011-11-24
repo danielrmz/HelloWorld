@@ -1,0 +1,21 @@
+
+<div class="tweet <%= if owned then "self" end %>" id="t_<%=tweet.id_str %>">
+	    <img class="picture" src='http://cache.world.dotcloud.com/<%= tweet.user.profile_image_url %>' />
+		<ul class="hw-actions">
+			<li class="act-retweet"><span></span></li>
+			<li class="act-reply"><span></span></li>
+			<% if owned %>
+			<li class="act-delete"><span></span></li>
+			<% end %>
+		</ul>
+		<div class="bubble">
+			<div class="content">
+				<div class="user">
+					<span class="screen_name"><%= tweet.user.screen_name %></span>
+					&nbsp;
+					<span class="name"><%= tweet.user.name%></span>
+				</div>
+				<div class="description"><%= raw tweet.text %></div>
+			</div>
+		</div>
+</div>

@@ -1,0 +1,41 @@
+{
+	post_is_self_post
+	post_is_shared
+	post_is_location
+	post_is_reply
+	post_id
+	post_created_at
+	post_created_at_unixtime
+	post_content
+	post_undeletable
+	user_is_protected
+	user_profile_image
+	user_screen_name
+	user_name
+	base_user_screen_name
+	base_user_name
+	
+}
+<div class='tweet {{post_is_self_post}} {{post_is_shared}}' style='display:none;' data-postid='{{post_id}}'>
+	<img class='picture' src='{{user_profile_image}}' />
+    <ul class='actions'>
+    	<li class='act-retweet'><span></span></li>
+        <li class='act-reply'><span></span></li>
+        <li class='act-delete {{post_undeletable}}'><span></span></li> 
+    </ul>
+    <div class='bubble'>
+    	<div class='retweet-flag'></div>
+        <div class='content'>
+        	<div class='user'>
+            	<div class='location-pin {{post_is_location}}'></div>
+                <div class='response-to {{post_is_reply}}'></div>
+                <div class='protected {{user_is_protected}}'></div>
+                <span class='screen_name'>{{user_screen_name}}</span>
+                <span class='name'>{{user_name}}</span>
+                <div class='retweet-info'>shared by <span class='screen_name'>{{base_user_screen_name}}</span> <span class='name'>{{base_user_name}}</span></div>
+            </div>
+            <div class='description'>{{post_content}}</div>
+            <a class='time' data-time='{{post_created_at_unixtime}}' title='{{post_created_at}}' href='javascript:;'></a>
+        </div>
+    </div>
+</div>

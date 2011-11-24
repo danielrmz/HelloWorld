@@ -1,0 +1,54 @@
+#sessions .new form.hw-panel {
+  width: 330px; }
+  #sessions .new form.hw-panel .footer {
+    background: #f1f6f9;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f1f6f9 0%, #eff4f7 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1f6f9), color-stop(100%, #eff4f7));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f1f6f9 0%, #eff4f7 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f1f6f9 0%, #eff4f7 100%);
+    /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #f1f6f9 0%, #eff4f7 100%);
+    /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f6f9', endColorstr='#eff4f7',GradientType=0 );
+    /* IE6-9 */
+    background: linear-gradient(top, #f1f6f9 0%, #eff4f7 100%);
+    /* W3C */
+    padding: 10px;
+    height: 30px;
+    border-top: 1px solid #DDE0E7;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; }
+    #sessions .new form.hw-panel .footer input[type="submit"] {
+      float: right; }
+  #sessions .new form.hw-panel .fields input {
+    border: 1px solid #D4D8DB;
+    -webkit-border-radius: 2px;
+    padding: 7px;
+    width: 94%;
+    outline: 0px;
+    margin-top: 3px;
+    /* -webkit-box-shadow: 0px 0px 7px 0px  #F7F8FA;
+    -moz-box-shadow:  0px 0px 7px 0px #F7F8FA;
+    box-shadow:  0px 0px 7px 0px #F7F8FA ;
+    */ }
+    #sessions .new form.hw-panel .fields input:focus {
+      border: 1px solid #B6D5EA !important;
+      -webkit-box-shadow: #B6D5EA 0px 0px 7px 0px;
+      -moz-box-shadow: #B6D5EA 0px 0px 7px 0px;
+      box-shadow: #B6D5EA 0px 0px 7px 0px;
+      outline: 0px; }
+
+.left {
+  float: left; }
+
+.services {
+  position: relative;
+  top: 2px; }

@@ -1,0 +1,28 @@
+embed_assets: off
+gzip_assets: on
+allow_debugging: on
+javascript_compressor: closure
+
+javascripts:
+  common:
+    - public/javascripts/lib/jquery/jquery.min.js
+    - public/javascripts/lib/facebox/src/facebox.js
+    - public/javascripts/lib/bootstrap/bootstrap-twipsy.js
+    - public/javascripts/lib/bootstrap/bootstrap-alerts.js
+    - public/javascripts/common/hw.js
+    - public/javascripts/common/hw.utils.js
+    - public/javascripts/common/hw.i18n.js
+    
+  timeline:
+    - public/javascripts/lib/jquery-infinitescroll/jquery.infinitescroll.js
+    - public/javascripts/timeline/hw.timeline.stream.js
+    - public/javascripts/timeline/hw.timeline.post.js
+    
+stylesheets:
+  common:
+    - public/javascripts/lib/facebox/src/facebox.css
+    - public/stylesheets/common/bootstrap-1.4.0.min.css
+    - public/stylesheets/common/main.css
+    
+  auth:
+    - public/stylesheets/auth/login.css

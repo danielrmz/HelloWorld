@@ -1,0 +1,416 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans" !important;
+  background: #F4F4F4 !important;
+  /*background: url(../../images/background.png);*/ }
+
+label, input, select, textarea {
+  font-family: "Open Sans",Helvetica,Arial,sans-serif !important; }
+
+#facebox {
+  top: 50px !important; }
+  #facebox .content {
+    width: auto !important; }
+  #facebox .popup {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0; }
+    #facebox .popup.scrollable {
+      max-height: 500px;
+      overflow: auto; }
+      #facebox .popup.scrollable .content {
+        border-radius: 0; }
+
+.facebox_overlayBG {
+  background-color: white;
+  opacity: 0.5 !important; }
+
+#infscr-loading {
+  width: 450px;
+  text-align: center; }
+
+#facebox h5 {
+  margin: 0 0 20px;
+  font-weight: bold;
+  line-height: 0;
+  width: 200px;
+  display: inline-block; }
+#facebox textarea {
+  width: 97%;
+  resize: none; }
+  #facebox textarea:focus {
+    box-shadow: none !important; }
+#facebox .btn {
+  float: right;
+  height: 27px;
+  padding-top: 3px;
+  margin-top: 5px;
+  outline: 0; }
+#facebox .location, #facebox .responseto {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 10px; }
+  #facebox .location .profile-pic, #facebox .responseto .profile-pic {
+    float: left;
+    height: 50px;
+    margin-right: 10px;
+    border: 1px solid silver; }
+  #facebox .location .screen_name, #facebox .responseto .screen_name {
+    font-weight: bold; }
+  #facebox .location .name, #facebox .responseto .name {
+    font-size: 11px;
+    color: silver; }
+  #facebox .location .time, #facebox .responseto .time {
+    display: block;
+    color: silver;
+    font-size: 11px;
+    outline: 0; }
+#facebox .responseto {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-bottom: 0px;
+  min-width: 400px; }
+#facebox .replyto {
+  max-width: 450px; }
+#facebox hr {
+  margin-top: 10px;
+  margin-bottom: 5px; }
+
+.hw-container {
+  font-family: "Arial";
+  font-size: 12px;
+  /* @Menubar */ }
+  .hw-container .titlebar {
+    height: 15px;
+    padding: 4px;
+    text-align: center;
+    color: white;
+    background: #333333;
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    z-index: 3000; }
+  .hw-container .hw-menubar {
+    background: #373737;
+    border-bottom: 1px solid black;
+    height: 40px;
+    box-shadow: 0px 0px 7px #999999;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1999;
+    color: #E4E4E4;
+    /* @group Colors of menu items */
+    /* @endgroup */ }
+    .hw-container .hw-menubar ul {
+      list-style: none;
+      display: inline;
+      margin: 0px;
+      padding: 0px; }
+      .hw-container .hw-menubar ul li {
+        display: inline;
+        position: relative;
+        top: 12px !important; }
+        .hw-container .hw-menubar ul li a {
+          color: #E4E4E4;
+          padding: 10px;
+          padding-bottom: 0px;
+          text-decoration: none;
+          border-bottom: 0px solid white;
+          outline: 0; }
+          .hw-container .hw-menubar ul li a:hover {
+            border-bottom: 0px;
+            /*border-bottom:4px solid black;*/ }
+          .hw-container .hw-menubar ul li a:visited {
+            color: #E4E4E4; }
+    .hw-container .hw-menubar ul {
+      /* .home:hover { border-bottom:4px solid orange !important; }
+       .mentions:hover { border-bottom:4px solid green; }
+       .retweets:hover { border-bottom:4px solid blue; }
+       .favorites:hover { border-bottom:4px solid yellow; }
+       .messages:hover { border-bottom:4px solid red; }
+       .settings:hover { border-bottom:4px solid brown; }
+       .tweet:hover { border-bottom:4px solid cyan; } */ }
+  .hw-container .main {
+    margin-top: 60px; }
+  .hw-container .tweet {
+    margin-bottom: 0px;
+    width: 450px;
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    position: relative;
+    min-height: 60px; }
+    .hw-container .tweet .bubble {
+      padding: 3px;
+      background: #E8E8E8;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      margin-left: 70px;
+      width: 360px; }
+      .hw-container .tweet .bubble::after {
+        position: absolute;
+        top: 20px;
+        left: 72px;
+        content: "";
+        background: url(../../images/arrow.png) 0px 0px;
+        height: 12px;
+        width: 9px; }
+    .hw-container .tweet .retweet-info {
+      display: none; }
+    .hw-container .tweet.retweet {
+      position: relative; }
+      .hw-container .tweet.retweet .retweet-info {
+        display: inline-block;
+        font-size: 11px; }
+      .hw-container .tweet.retweet:hover .name {
+        display: none !important; }
+      .hw-container .tweet.retweet .retweet-flag {
+        position: absolute;
+        bottom: 5px;
+        right: 24px;
+        background: url(/images/sprites.png) -29px -1px no-repeat;
+        width: 41px;
+        height: 41px; }
+    .hw-container .tweet.self .picture-container {
+      right: 0px; }
+    .hw-container .tweet.self .bubble {
+      margin-left: 20px;
+      margin-right: 50px; }
+      .hw-container .tweet.self .bubble::after {
+        right: 65px;
+        left: auto;
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg); }
+    .hw-container .tweet.self .actions {
+      float: left !important;
+      left: 5px;
+      right: auto; }
+      .hw-container .tweet.self .actions .act-reply {
+        visibility: hidden;
+        display: none; }
+      .hw-container .tweet.self .actions .act-retweet {
+        visibility: hidden;
+        display: none; }
+    .hw-container .tweet .content {
+      border: 1px solid silver;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      padding: 3px 5px;
+      min-height: 20px;
+      background: white;
+      border: 1px solid #CACACA; }
+    .hw-container .tweet .arrow-border {
+      border-color: transparent silver transparent transparent;
+      border-style: solid;
+      border-width: 7px;
+      height: 0;
+      width: 0;
+      position: absolute;
+      content: " ";
+      top: 20px;
+      left: 73px;
+      z-index: 1; }
+    .hw-container .tweet .arrow {
+      border-color: #EDEDED transparent transparent transparent;
+      border-style: solid;
+      border-width: 10px;
+      height: 0;
+      width: 0;
+      position: absolute;
+      bottom: -19px;
+      left: 30px; }
+    .hw-container .tweet .picture-container {
+      width: 55px;
+      height: 55px;
+      position: absolute; }
+    .hw-container .tweet .picture {
+      margin: 0px 10px 10px 0px;
+      position: absolute;
+      border: 1px solid silver;
+      height: 55px;
+      z-index: 1; }
+    .hw-container .tweet .original-picture {
+      margin: 0px 10px 10px 0px;
+      position: absolute;
+      bottom: 0px;
+      top: 30px;
+      right: -20px;
+      border: 1px solid white;
+      height: 30px;
+      z-index: 2; }
+    .hw-container .tweet .user {
+      margin-bottom: 3px;
+      border-bottom: 1px solid #efefef; }
+      .hw-container .tweet .user .protected {
+        width: 8px;
+        height: 10px;
+        display: none;
+        background: url(/images/sprites.png) -18px -48px no-repeat; }
+        .hw-container .tweet .user .protected.active {
+          display: inline-block; }
+      .hw-container .tweet .user .response-to {
+        float: right;
+        background: url(/images/sprites.png) -1px -60px no-repeat;
+        width: 12px;
+        height: 13px;
+        display: none;
+        cursor: pointer; }
+        .hw-container .tweet .user .response-to.active {
+          display: inline-block; }
+      .hw-container .tweet .user .location-pin {
+        float: right;
+        background: url(/images/sprites.png) -15px -60px no-repeat;
+        width: 12px;
+        height: 15px;
+        display: none;
+        cursor: pointer; }
+        .hw-container .tweet .user .location-pin.active {
+          display: inline-block; }
+      .hw-container .tweet .user .screen_name {
+        font-weight: bold;
+        font-size: 11px;
+        /*13px;*/ }
+      .hw-container .tweet .user .name {
+        font-size: 10px;
+        color: silver;
+        display: none; }
+    .hw-container .tweet:hover .user .name {
+      display: inline-block; }
+    .hw-container .tweet .description {
+      width: 350px;
+      word-wrap: break-word; }
+      .hw-container .tweet .description a {
+        text-decoration: none;
+        color: blue; }
+      .hw-container .tweet .description a:visited {
+        color: blue; }
+    .hw-container .tweet:hover .actions {
+      visibility: visible; }
+    .hw-container .tweet:hover .bubble {
+      background: #DDD; }
+    .hw-container .tweet:hover .bubble::after {
+      background: url(../../images/arrow.png) 0px -12px; }
+    .hw-container .tweet .time {
+      font-size: 10px;
+      color: silver; }
+    .hw-container .tweet .actions {
+      background: transparent;
+      border-top: 0px;
+      float: right;
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      position: absolute;
+      right: 0px;
+      visibility: hidden; }
+      .hw-container .tweet .actions li {
+        display: block;
+        width: 20px;
+        min-width: 20px;
+        height: 16px;
+        border: 1px solid #E7E7E7;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        cursor: pointer;
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.16, #e7e7e7), color-stop(0.79, #f5f6f6));
+        background-image: -moz-linear-gradient(center bottom, #e7e7e7 16%, #f5f6f6 79%);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px; }
+        .hw-container .tweet .actions li.hide {
+          display: none; }
+        .hw-container .tweet .actions li:active {
+          border-top: 1px solid #cacaca;
+          border-left: 1px solid #cacaca;
+          border-bottom: 1px solid #dddddd;
+          border-right: 1px solid #dddddd;
+          background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f5f6f6), color-stop(0.79, #e7e7e7));
+          background-image: -moz-linear-gradient(center bottom, #f5f6f6 16%, #e7e7e7 79%); }
+          .hw-container .tweet .actions li:active.act-retweet span {
+            background: url(../../images/sprites.png) -14px -13px no-repeat; }
+          .hw-container .tweet .actions li:active.act-reply span {
+            background: url(../../images/sprites.png) -15px 0px no-repeat; }
+          .hw-container .tweet .actions li:active.act-delete span {
+            background: url(../../images/sprites.png) -16px -23px no-repeat; }
+        .hw-container .tweet .actions li.act-retweet span {
+          background: url(../../images/sprites.png) 0px -13px no-repeat;
+          width: 14px;
+          height: 8px;
+          position: relative;
+          display: block;
+          top: 4px;
+          left: 3px; }
+        .hw-container .tweet .actions li.act-reply span {
+          background: url(../../images/sprites.png) 0px 0px no-repeat;
+          width: 12px;
+          height: 12px;
+          position: relative;
+          display: block;
+          top: 2px;
+          left: 3px; }
+        .hw-container .tweet .actions li.act-delete span {
+          background: url(../../images/sprites.png) -2px -23px no-repeat;
+          width: 10px;
+          height: 10px;
+          position: relative;
+          display: block;
+          top: 2px;
+          left: 5px; }
+  .hw-container #home {
+    margin: 0px;
+    padding: 0px; }
+
+form.hw-panel {
+  margin: 0px auto;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  background: white;
+  border: 1px solid #DDE0E7;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2); }
+  form.hw-panel h2 {
+    font-weight: 400;
+    border-bottom: 1px solid #F0F0F0;
+    padding-bottom: 0px;
+    margin: 5px 15px 0px 15px;
+    font-size: 1.5em;
+    line-height: 36px; }
+  form.hw-panel p {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px; }
+    form.hw-panel p span {
+      display: block;
+      color: #7A7A7A;
+      font-size: 14px;
+      margin-bottom: 8px; }
+      form.hw-panel p span label {
+        text-align: left;
+        width: 150px; }
+    form.hw-panel p:last-child {
+      margin-bottom: 30px; }
+
+#registrations form.hw-panel {
+  width: 500px; }
+  #registrations form.hw-panel div, #registrations form.hw-panel input[type="submit"] {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px; }
+  #registrations form.hw-panel div.cancel {
+    margin-top: 20px; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clearfix {
+  clear: both; }
