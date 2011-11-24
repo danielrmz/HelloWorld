@@ -1,0 +1,3 @@
+[submodule "world.hello/vendor/plugins/mustache.js"]
+	path = world.hello/vendor/plugins/mustache.js
+	url = https://github.com/janl/mustache.js.git
